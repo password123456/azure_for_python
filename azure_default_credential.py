@@ -6,8 +6,9 @@ from azure.core.exceptions import ClientAuthenticationError
 
 # you have to defind environment-variables
 # https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python#environment-variables
-
-# AZURE_CLIENT_ID	ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET
+# --> AZURE_CLIENT_ID	ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET
+#
+# To execute the code in Azure's Automation service, only the subscription ID is required. (No Need AZURE_CLIENT_ID	ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET)
 
 def main():
     credentials = DefaultAzureCredential()
